@@ -4,8 +4,20 @@
         <a class="btn btn-ghost text-xl">RICK & MORTY</a>
     </div>
   <div class="navbar-end">
-      <a class="btn btn-ghost text-xl">Characters</a>
-      <a class="btn btn-ghost text-xl">Episodes</a>
-      <a class="btn btn-ghost text-xl">Locations</a>
+      <a 
+        class="btn text-xl"
+        [routerLink]="['characters']"
+        routerLinkActive="btn-primary" 
+        >Characters</a>
+      <a 
+        class="btn text-xl"
+        [routerLink]="['episodes']"
+        routerLinkActive="btn-primary" 
+        >Episodes</a>
+      <a 
+        class="btn text-xl"
+        [routerLink]="['locations']"
+        routerLinkActive="btn-primary"
+        >Locations</a>
   </div>
 </div>
