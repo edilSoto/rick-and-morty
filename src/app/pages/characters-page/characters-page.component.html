@@ -3,5 +3,8 @@
         <p>Filter space</p>
     </div>
     <div class="col-start-2 col-end-7">
+        @if (characterResource.hasValue()) {
+            <app-character-grid [characters]="characterResource.value()"/>
+        }
     </div>
 </div>

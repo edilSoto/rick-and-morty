@@ -1,1 +1,18 @@
-<p>character-grid works!</p>
+<div class="flex flex-wrap justify-evenly">
+    @for (character of characters(); track character.id) {
+        <div class="w-1/3">
+            <div class="flex flex-col">
+                <img class="w-45" [src]="character.image" alt="No image">
+                <div class="flex">
+                    <h1 class="text-xl font-bold p-2">{{character.name}}</h1>
+                    <div class="flex flex-col">
+                        <h2 class="font-thin">Species: <span class="font-semibold">{{character.species}}</span></h2>
+                        <h2 class="font-thin">Gender: <span class="font-semibold">{{character.gender}}</span></h2>
+                        <h2 class="font-thin">Location: <span class="font-semibold">{{character.location.name}}</span></h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

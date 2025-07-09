@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Character } from '../../interfaces/character-response.interface';
 
 @Component({
   selector: 'app-character-grid',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './character-grid.component.html',
 })
 export class CharacterGridComponent {
-  
+  characters = input.required<Character[]>();
 }
