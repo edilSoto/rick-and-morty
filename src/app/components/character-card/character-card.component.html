@@ -1,1 +1,13 @@
-<p>character-card works!</p>
+<div class="flex flex-col rounded-t-4xl bg-blue-300">
+    <img class="w-fit rounded-t-4xl" [src]="character().image" alt="No image">
+    <div class="flex justify-around p-2 items-baseline">
+        <h1 class="text-xl font-bold w-1/2">{{character().name}}</h1>
+        <h1 class="badge badge-warning">{{character().status}}</h1>
+    </div>
+    <div class="flex flex-col items-center w-full p-3">
+        <h2 class="font-thin">Species: <span class="font-semibold">{{character().species}}</span></h2>
+        <h2 class="font-thin">Gender: <span class="font-semibold">{{character().gender}}</span></h2>
+        <h2 class="font-thin">Location: <span class="font-semibold">{{character().location.name}}</span></h2>
+
+    </div>
+</div>

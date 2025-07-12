@@ -7,4 +7,5 @@ import { Character } from '../../interfaces/character-response.interface';
   templateUrl: './character-card.component.html',
 })
 export class CharacterCardComponent {
+  character = input.required<Character>();
 }
